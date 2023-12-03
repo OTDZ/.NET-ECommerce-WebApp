@@ -1,0 +1,20 @@
+
+{
+    "region" : "eu-west-2",
+    "configuration" : "Debug",
+    "framework"     : "net7.0",
+    "self-contained" : true,
+    "application"    : "ECommerceWebApp",
+    "environment"    : "ECommerceWebApp-dev",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-09067befbec72b420,sg-04635d0c0c297ce85\";\"aws:ec2:vpc,Subnets\"=\"subnet-0c77f63ccee203180,subnet-07a7943ea1e1b1971,subnet-083bd69c0fd7740fe\"",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.5.4 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "ecommercewebapp-dev",
+    "instance-type"        : "t2.micro",
+    "key-pair"             : "ECommerceWeb",
+    "instance-profile"     : "aws-elasticbeanstalk-ECommerceWebApp-dev-3",
+    "service-role"         : "aws-elasticbeanstalk-service-role",
+    "proxy-server"         : "nginx"
+}

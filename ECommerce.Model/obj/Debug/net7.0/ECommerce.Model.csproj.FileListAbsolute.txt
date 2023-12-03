@@ -1,0 +1,12 @@
+C:\Users\omart\NETProjects\ECommerce\ECommerce.Model\bin\Debug\net7.0\ECommerce.Model.deps.json
+C:\Users\omart\NETProjects\ECommerce\ECommerce.Model\bin\Debug\net7.0\ECommerce.Model.dll
+C:\Users\omart\NETProjects\ECommerce\ECommerce.Model\bin\Debug\net7.0\ECommerce.Model.pdb
+C:\Users\omart\NETProjects\ECommerce\ECommerce.Model\obj\Debug\net7.0\ECommerce.Model.csproj.AssemblyReference.cache
+C:\Users\omart\NETProjects\ECommerce\ECommerce.Model\obj\Debug\net7.0\ECommerce.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omart\NETProjects\ECommerce\ECommerce.Model\obj\Debug\net7.0\ECommerce.Model.AssemblyInfoInputs.cache
+C:\Users\omart\NETProjects\ECommerce\ECommerce.Model\obj\Debug\net7.0\ECommerce.Model.AssemblyInfo.cs
+C:\Users\omart\NETProjects\ECommerce\ECommerce.Model\obj\Debug\net7.0\ECommerce.Model.csproj.CoreCompileInputs.cache
+C:\Users\omart\NETProjects\ECommerce\ECommerce.Model\obj\Debug\net7.0\ECommerce.Model.dll
+C:\Users\omart\NETProjects\ECommerce\ECommerce.Model\obj\Debug\net7.0\refint\ECommerce.Model.dll
+C:\Users\omart\NETProjects\ECommerce\ECommerce.Model\obj\Debug\net7.0\ECommerce.Model.pdb
+C:\Users\omart\NETProjects\ECommerce\ECommerce.Model\obj\Debug\net7.0\ref\ECommerce.Model.dll

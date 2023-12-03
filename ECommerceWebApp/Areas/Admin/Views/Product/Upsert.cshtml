@@ -1,0 +1,87 @@
+﻿@model ProductVM
+
+<form method="post" enctype="multipart/form-data">
+    <input asp-for="Product.ProductId" hidden />
+    <input asp-for="Product.ImageUrl" hidden />
+    <div class="row">
+        <div class="col-10">
+            <div class="border p-3 mt-4">
+                <div class="row pb-2">
+                    <h2 class="text-primary">@(Model.Product.ProductId == 0 ? "Create" : "Update") Product</h2>
+                    <hr />
+                </div>
+                <div class="mb-3 row">
+                    <label asp-for="Product.Title" class="pd-0"></label>
+                    <input asp-for="Product.Title" class="form-control" />
+                    <span asp-validation-for="Product.Title" class="text-danger"></span>
+                </div>
+                <div class="mb-3 row">
+                    <label asp-for="Product.Description" class="pd-1"></label>
+                    <input asp-for="Product.Description" class="form-control" />
+                    <span asp-validation-for="Product.Description" class="text-danger"></span>
+                </div>
+                <div class="mb-3 row">
+                    <label asp-for="Product.CategoryId" class="pd-1"></label>
+                    <select asp-for="Product.CategoryId" asp-items="@Model.CategoryList" class="form-select">
+                        <option disabled selected>--Select Category--</option>
+                    </select>
+                    <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+                </div>
+                <div class="mb-3 row">
+                    <label asp-for="Product.ISBN" class="pd-1"></label>
+                    <input asp-for="Product.ISBN" class="form-control" />
+                    <span asp-validation-for="Product.ISBN" class="text-danger"></span>
+                </div>
+                <div class="mb-3 row">
+                    <label asp-for="Product.Author" class="pd-1"></label>
+                    <input asp-for="Product.Author" class="form-control" />
+                    <span asp-validation-for="Product.Author" class="text-danger"></span>
+                </div>
+                <div class="mb-3 row">
+                    <label asp-for="Product.Price" class="pd-1"></label>
+                    <input asp-for="Product.Price" class="form-control" />
+                    <span asp-validation-for="Product.Price" class="text-danger"></span>
+                </div>
+                <div class="mb-3 row">
+                    <label asp-for="Product.ImageUrl" class="pd-1"></label>
+                    <input type="file" name="file" class="form-control" />
+                </div>
+
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        @if (Model.Product.ProductId == 0)
+                        {
+                            <button type="submit" class="btn btn-primary form-control">Create</button>
+                        }
+                        else
+                        {
+                            <button type="submit" class="btn btn-primary form-control">Update</button>
+                        }
+
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a asp-controller="Product" asp-action="index" class="btn btn-outline-secondary border form-control">
+                            Back
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="p-3 mt-4">
+                <img src="@Model.Product.ImageUrl" width="100%"
+                    style="border-radius:5px; border:1px solid #bbb9b9"/>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!--
+    Client-side Validation
+-->
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
